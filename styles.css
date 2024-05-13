@@ -1,0 +1,126 @@
+/* Colores que serán ocupados en la página */
+:root{
+    --color1: #C0C0C0;
+    --color2: #2D2D2D;
+    --color3: #D9D9D9;
+    --color4: #333333;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: auto;
+    background: var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Marmelad", sans-serif;
+}
+/* Sección de barra de navegación */
+.redireccion_pagPrincipal{
+    margin: 1vw;
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+    color: var(--color2);
+    margin: 1em;
+}
+hr{
+    width: 90%;
+}
+/* Sección principal */
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Buscador de nombre */
+.buscador_nombre{
+    width: 30em;
+    height: 3em;
+    font-size: .8em;
+    text-align: center;
+    background-color: var(--color3);
+    border: none;
+    border-radius: 1em;
+    margin: 2em;
+    transition: 0.7s ease;
+    color: var(--color2);
+}
+.buscador_nombre:focus {
+    border-color: var(--color3);
+    box-shadow: 0 0 1vw var(--color2);
+    background-color: var(--color4);
+    color: var(--color1);
+}
+.buscador_nombre::placeholder {
+    color: var(--color2); 
+}
+.buscador_nombre:focus::placeholder{
+    color: var(--color1);
+}
+/* Cartas con información de los animalitos */
+.Contenedor_cartas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.animalito{
+    width: 24em;
+    height:10em;
+    background-color: var(--color3);
+    display: flex;
+    border-radius: 1em;
+    margin: 1em;
+}
+.animalito img{
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+.animalito .descripcion_animalito{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.descripcion_animalito h2{
+    color: var(--color2);
+    text-shadow: 0 0 3px var(--color4);
+}
+.descripcion_animalito p{
+    font-size: 1.12em;
+    text-align: center;
+    margin-top: .6em;
+    color: var(--color2);
+}
+/* Sección - Pié de página */
+.fondo_pie_pagina{
+    width: 100%;
+    height: 10em;
+    margin-top: 2em;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    align-items: center;
+
+}
+.pie_pag_foto{
+    margin: 2em;
+    width: 10em; 
+    height: 5em;
+}
+.pie_pag_texto{
+    color: var(--color1);
+    font-size: 1em;
+}
